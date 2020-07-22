@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PerlHarbour:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PerlHarbour_jar</output-path>
+    <root id="archive" name="PerlHarbour.jar">
+      <element id="module-output" name="PerlHarbour" />
+    </root>
+  </artifact>
+</component>

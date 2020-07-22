@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0"
+      prefWidth="440.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+        <Label layoutX="48.0" layoutY="52.0" text="Iмя:" />
+        <TextField fx:id="name" layoutX="156.0" layoutY="48.0" />
+
+        <Label layoutX="48.0" layoutY="85.0" text="Координата X" />
+        <TextField fx:id="cordX" layoutX="156.0" layoutY="85.0" />
+
+        <Label layoutX="48.0" layoutY="115.0" text="Координата Y:" />
+        <TextField fx:id="cordY" layoutX="156.0" layoutY="115.0" />
+
+        <Label layoutX="48.0" layoutY="148.0" text="Країна" />
+        <ComboBox fx:id="nations" layoutX="156.0" layoutY="148.0" prefWidth="149.0" />
+
+        <Label layoutX="48.0" layoutY="198.0" text="Тип Літаку" />
+        <RadioButton layoutX="48.0" layoutY="220.0" mnemonicParsing="false" selected="true" text="Jet">А
+            <toggleGroup>
+                <ToggleGroup fx:id="group" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="140.0" layoutY="220.0" mnemonicParsing="false" text="Fighter" toggleGroup="$group" />
+        <RadioButton layoutX="246.0" layoutY="220.0" mnemonicParsing="false" text="Bomber" toggleGroup="$group" />
+
+        <Button fx:id="OK" layoutX="48.0" layoutY="260.0" mnemonicParsing="false" onAction="#pressOK" text="OK" />
+</Pane>
